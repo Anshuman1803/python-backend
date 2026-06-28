@@ -1,0 +1,61 @@
+# ==========================
+# FastAPI and Uvicorn
+# ==========================
+fastapi
+uvicorn[standard]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# ==========================
+# Configuration
+# ==========================
+python-dotenv
+pydantic-settings
+
+# ==========================
+# MongoDB
+# ==========================
+motor
+
+# ==========================
+# Authentication
+# ==========================
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
+
+# ==========================
+# Logging
+# ==========================
+loguru
+
+# ==========================
+# Validation
+# ==========================
+email-validator
+
+# ==========================
+# Development
+# ==========================
+pytest
+httpx
+
+
+# Rate limiting
+slowapi
