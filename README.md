@@ -6,10 +6,6 @@ The goal of this repository is to build a strong backend foundation using Python
 
 > Every folder in this repository represents a step in my learning journey—from basic concepts to production-grade backend development.
 
-## 🎯 Objective
-
-The objective of this repository is to learn how to build scalable, secure, and production-ready backend applications that can power modern AI and Agentic AI systems.
-
 ## 👨‍💻 Author
 
 **Anshuman Kumar**
