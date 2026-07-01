@@ -2,7 +2,6 @@
 
 import sys
 from pydantic import ValidationError
-from loguru import logger
 
 from .settings import get_settings
 from .logging import logger 
@@ -13,7 +12,7 @@ try:
     logger.info("Checking required environment variables")
     required_envs = {
         "MONGO_USER": settings.MONGO_USER,
-        "MONGO_PASSWORD": settings.MONGO_PASS,
+        "MONGO_PASS": settings.MONGO_PASS,
         "MONGO_DBNAME": settings.MONGO_DBNAME
     }
     missing_envs = [
@@ -36,3 +35,5 @@ except ValueError as error:
     logger.error("Environment configuration error")
     logger.error(error)
     sys.exit(1)
+
+__all__ = ["settings", "logger"]

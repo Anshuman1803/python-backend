@@ -15,6 +15,11 @@ class Settings(BaseSettings):
         extra="ignore"
     )
 
+    @property
+    def mongo_uri(self) -> str:
+        print(f"mongodb+srv://{self.MONGO_USER}:<YOUR_DB_PASSWORD>@cluster0.48mqrke.mongodb.net/<YOUR_DB_NAME>?retryWrites=true&w=majority")
+        return (f"mongodb+srv://{self.MONGO_USER}:{self.MONGO_PASS}@cluster0.48mqrke.mongodb.net/{self.MONGO_DBNAME}?retryWrites=true&w=majority")
+
 
 @lru_cache(maxsize=1) # Cache the settings to avoid reloading them multiple times
 def get_settings() -> Settings:
